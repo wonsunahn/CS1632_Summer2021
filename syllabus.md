@@ -6,9 +6,9 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 ## WEEK 1 (Week of 17 MAY)
 
 * Class 1: Course organization / Introduction to Software QA
-  * Submit the TopHat survey questions (due TBD on TopHat)
-  * Do the [Java Assessment Exercise](exercises/0) (due TBD on GradeScope)
-  * Fill out the Partnership Contract (due TBD on GradeScope
+  * Submit the TopHat survey questions (due 5/24 on TopHat)
+  * Do the [Java Assessment Exercise](exercises/0) (due 5/24 on GradeScope)
+  * Fill out the Partnership Contract (due 5/24 on GradeScope)
   
 * Class 2: Software QA and Nondeterminism
 
