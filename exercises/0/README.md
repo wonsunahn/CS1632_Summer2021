@@ -1,6 +1,6 @@
 # Java Assessment Exercise
 
-DUE: Jan 27, 2021 3:00 PM
+DUE: May 19 (Wednesday), 2021 11:59 PM
 
 The purpose of this exercise is to assess your Java programming skills coming
 into this class.  Please submit by Wednesday 11:59 PM so that I may give you
