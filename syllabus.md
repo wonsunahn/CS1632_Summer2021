@@ -15,6 +15,7 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 * Listen to lectures 
   * Basic Testing Theory and Terminology (READING: AFIST, Chapters 2 - 4)
   * Requirements (READING: AFIST, Chapters 5)
+  * Test Plans, TM (READING: AFIST, Chapters 6, 8)
 
 ## WEEK 2 (Week of 24 MAY)
 
@@ -24,8 +25,7 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 * Deliverable 1 released 
 
-* Listen to lectures 
-  * Test Plans, TM (READING: AFIST, Chapters 6, 8)
+* Listen to lectures
   * Defects (READING: AFIST, Chapters 9)
   * Breaking Software (READING: AFIST, Chapters 7)
 
