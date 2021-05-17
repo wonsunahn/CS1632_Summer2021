@@ -149,7 +149,7 @@ questions if you had any difficulties.  You can finish up and **submit by Wednes
 
 * **Exercise 0:** Java assessment exercise
 * **Exercises 1-5:** Exercises that prepare you for the corresponding deliverable
-* **Supplemntary Exercises 1-3:** Supplementary exercises that are unrelated to a deliverable
+* **Supplementary Exercises 1-3:** Supplementary exercises that are unrelated to a deliverable
 
 ## Programming Language Selection
 
