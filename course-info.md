@@ -54,8 +54,8 @@ recordings available on Canvas.  The class schedule is available on the
   * Deliverable 1 - 10%
   * Deliverable 2 - 15%
   * Deliverable 3 - 15%
-  * Deliverable 4 - 10%
-  * Deliverable 5 - 20%
+  * Deliverable 4 - 15%
+  * Deliverable 5 - 15%
 * Midterms (20%):
   * Midterm 1 - 10%
   * Midterm 2 - 10%
