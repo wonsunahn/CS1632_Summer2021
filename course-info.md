@@ -18,7 +18,7 @@ Software Quality Assurance - Summer 2021
 
 **Grading TA Information:**
 
-  * Name: Shubhrika Sehgal (shs253 at pitt dot edu)
+  * Name: Sina Malakouti (sem238 at pitt dot edu)
   * Primary mode of communication: "Regrade Request" on GradeScope
   * Secondary mode of communication: Chat on Microsoft Teams
   
@@ -118,7 +118,7 @@ late, you would receive 90 - 15 = 75%.).
 
 ## Group Work
 
-Please submit the Partnership Contract on GradeScope by 2/5.  Your
+Please submit the Partnership Contract on GradeScope.  Your
 expectations as a group member are outlined clearly on the contract.  You may
 resubmit the contract at a later time, at which time the new contract will come
 into effect.
