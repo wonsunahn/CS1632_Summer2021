@@ -172,14 +172,14 @@ count.  On the other hand, the actual score you get on GradeScope will not
 count towards your grade.  It's there only for feedback purposes and help you
 do Deliverable 1 better.  This applies to all future exercises.
 
-Please use the ReportTemplate.docx file provided in this directory to write
-your report.  If you don't have a .docx compatible word processor, that's
-perfectly fine as long as you follow the same organization.  A PDF version of
-the file is at ReportTemplate.pdf.  Please make sure that the traceability
-matrix, test cases, and defects are on seperate pages.  You will be submitting
-to GradeScope in PDF format.  When you submit, you will be asked to assign
-pages in the PDF file to each rubric item: 1. Traceability Matrix, 2. Test
-Cases, and 3. Defects.  
+Please use the [ReportTemplate.docx](ReportTemplate.docx) file provided in this
+directory to write your report.  If you don't have a .docx compatible word
+processor, that's perfectly fine as long as you follow the same organization.
+A PDF version of the file is at [ReportTemplate.pdf](ReportTemplate.pdf).
+Please make sure that the traceability matrix, test cases, and defects are on
+seperate pages.  You will be submitting to GradeScope in PDF format.  When you
+submit, you will be asked to assign pages in the PDF file to each rubric item:
+1. Traceability Matrix, 2.  Test Cases, and 3. Defects.  
 
 Each pairwise group shall do *one* submission to GradeScope to the **Exercise
 1** link, by *one member* of the group.  The submitting member shall press the
@@ -267,7 +267,8 @@ behavior conformant with the requirements.
 
 Each pairwise group shall do one submission to the **Exercise 1 Extra Credit**
 link on GradeScope in the same manner as for Exercise 1.  Please use the
-ReportTemplateExtraCredit.docx to write the report.  Make sure you number the
-defects so it is easy to count!  Only defects that I can reproduce will be
-counted.  That means they must be properly reported using the preconditions,
-execution steps, and postconditions template described on the worksheet.
+[ReportTemplateExtraCredit.docx](ReportTemplateExtraCredit.docx) to write the
+report.  Make sure you number the defects so it is easy to count!  Only defects
+that I can reproduce will be counted.  That means they must be properly
+reported using the preconditions, execution steps, and postconditions template
+described on the worksheet.
