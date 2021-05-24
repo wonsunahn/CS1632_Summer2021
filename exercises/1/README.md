@@ -41,10 +41,9 @@ Remember, the template for test cases -
 The IDENTIFIER is some value which will uniquely specify the test case.  We
 learned it can be either a number, or a more descriptive label (e.g.
 TEST-INVALID-TIMES, TEST-LOW-NUM-TIMES, etc.).  For this exercise, please use a
-descriptive label.  Note that the INPUT VALUES and OUTPUT VALUES fields in the
-template are omitted because we are not doing method unit testing.
-Please refer to [Lecture 4: Test Plans](../../lectures/CS1632_Lecture4_Test_Plans.pdf) Slides 8 - 13
-for more details and examples for each item.
+descriptive label.  Please refer to [Lecture 4: Test
+Plans](../../lectures/CS1632_Lecture4_Test_Plans.pdf) Slides 8 - 13 for more
+details and examples for each item.
 
 PRECONDITIONS is the **state of the system before performing the test**.  If
 the system is a website, it is things like: "user is logged into the website"
