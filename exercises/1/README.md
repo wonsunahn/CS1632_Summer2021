@@ -108,6 +108,10 @@ such as SEVERITY or IMPACT were not included for this exercise.
 STEPS.** You will not be able to reproduce the bug even if you reproduce the
 steps if you start from a different precondition!
 
+## Test Plan / Defect Reporting Tips
+
+Please read [tips.md](tips.md) for additional hints on how to properly document test cases and defects.
+
 ## Test Application: GoatGoatCar
 
 GoatGoatCar is going to be our way of determining the correct answer to the
