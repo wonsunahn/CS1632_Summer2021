@@ -1,7 +1,7 @@
 # CS 1632 - Software Quality Assurance
 Spring Semester 2021 - Exercise 1
 
-* DUE: May 26 (Wednesday), 2021 11:59 PM 
+* DUE: May 28 (Friday), 2021 11:59 PM 
 
 ## Description
 
