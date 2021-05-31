@@ -1,5 +1,5 @@
 # CS 1632 - Software Quality Assurance
-SUmmer Semester 2021 - Supplementary Exercise 1
+Summer Semester 2021 - Supplementary Exercise 1
 
 * DUE: No Submission 
 
