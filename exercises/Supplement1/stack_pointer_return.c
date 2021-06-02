@@ -9,14 +9,6 @@ void send_data(unsigned char *data, int len) {
   printf("\n");
 }
 
-void foo() {
-  // foo()'s stack frame gets allocated at exactly the location where
-  // bar()'s stack frame used to be.  That means now p occupies the same
-  // location data[8] used to occupy.
-  double *p = (double *) &p;
-  printf("p = %p\n", p);
-}
-
 unsigned char* bar() {
   // Array data[8] is deallocated immediately on function return as it falls
   // out of scope.  It is deallocated with the bar()'s stack frame.
@@ -26,8 +18,7 @@ unsigned char* bar() {
 
 int main() {
   unsigned char *data = bar();
-  foo();
-  // At this point, data points to the value of p!
+  // At this point, data becomes a dangling pointer!
   send_data(data, 8);
   return 0;
 }
