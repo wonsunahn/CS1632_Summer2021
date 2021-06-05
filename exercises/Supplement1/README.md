@@ -276,20 +276,14 @@ Below that line is the stack trace so we know the calling context.
 stack_pointer_return.c is a buggy program with a common error where a function
 returns a pointer to a local array.  When the function returns, the local array
 is deallocated with the rest of the function frame as it is now out of scope,
-thereby leaving the pointer dangling.  Later, that memory location is
-reoccupied by a pointer value so that later when the program attempts to send
-the bytes in that array, it sends the pointer value instead.  It leads to
-nondeterministic behavior likewise:
+thereby leaving the pointer dangling.  It leads to a segmentation fault:
 
 ```
 $ ./stack_pointer_return.bin
-p = 0x7fff71d62550
 Segmentation fault (core dumped)
 $ ./stack_pointer_return.bin
-p = 0x7ffcc23f1cc0
 Segmentation fault (core dumped)
 $ ./stack_pointer_return.bin
-p = 0x7fff29117c00
 Segmentation fault (core dumped)
 ```
 
@@ -304,7 +298,7 @@ AddressSanitizer:DEADLYSIGNAL
 ==473332==The signal is caused by a READ memory access.
 ==473332==Hint: address points to the zero page.
     #0 0x55ddf298f2c6 in send_data /home/PITT/wahn/nondeterminism/C/stack_pointer_return.c:7
-    #1 0x55ddf298f548 in main /home/PITT/wahn/nondeterminism/C/stack_pointer_return.c:31
+    #1 0x55ddf298f548 in main /home/PITT/wahn/nondeterminism/C/stack_pointer_return.c:22
     #2 0x7ffada7380b2 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x270b2)
     #3 0x55ddf298f1ad in _start (/u/home/PITT/wahn/nondeterminism/C/stack_pointer_return.asan+0x11ad)
 
