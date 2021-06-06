@@ -1,3 +1,16 @@
+- [CS 1632 - Software Quality Assurance](#cs-1632---software-quality-assurance)
+  * [Before You Begin](#before-you-begin)
+  * [Description](#description)
+  * [Sample Output](#sample-output)
+  * [Running Unit Tests](#running-unit-tests)
+  * [Tips](#tips)
+  * [Expected Outcome](#expected-outcome)
+  * [Measuring Code Coverage](#measuring-code-coverage)
+  * [Using an IDE (Integrated Development Environment)](#using-an-ide--integrated-development-environment-)
+  * [Submission](#submission)
+  * [GradeScope Feedback](#gradescope-feedback)
+  * [Resources](#resources)
+
 # CS 1632 - Software Quality Assurance
 Summer Semester 2021 - Exercise 2
 
@@ -212,26 +225,51 @@ your implementation has a defect or not.
 
 ## Expected Outcome
 
-Once you start filling in tests in RentACatTest, you will start to see some of those tests fail for those methods you haven't completed yet for RentACatImpl.  As you start filling in the methods in RentACatImpl, those failures will go away one by one until you again see the output:
+Once you start filling in tests in RentACatTest, you will start to see some of
+those tests fail for those methods you haven't completed yet for RentACatImpl.
+As you start filling in the methods in RentACatImpl, those failures will go
+away one by one until you again see the output:
+
 ```
 ALL TESTS PASSED
 ```
-You have come full circle!  But wait, does this mean RentACat is bug-free?  How do you know if your unit tests themselves had defects and that's why they passed, even when RentACat is buggy?We have to actually verify the unit tests themselves to make sure that they are not defective!  One way to verify unit tests is to test them on buggy programs to see if they detect the bugs as they are intended to.  I have created a buggy version of Rent-A-Cat just for this purpose named RentACatBuggy.java.  In order to apply your unit tests to RentACatBuggy, execute the following.  For Windows:
+
+You have come full circle!  But wait, does this mean RentACat is bug-free?  How
+do you know if your unit tests themselves had defects and that's why they
+passed, even when RentACat is buggy?We have to actually verify the unit tests
+themselves to make sure that they are not defective!  One way to verify unit
+tests is to test them on buggy programs to see if they detect the bugs as they
+are intended to.  I have created a buggy version of Rent-A-Cat just for this
+purpose named RentACatBuggy.java.  In order to apply your unit tests to
+RentACatBuggy, execute the following.  For Windows:
+
 ```
 runTestBuggy.bat
 ```
-For Mac or Linux, try doing:
+
+For Mac or Linux:
 ```
 bash runTestBuggy.sh
 ```
 
-If you run the above, you should get output that looks like [runTestBuggy.output.txt](runTestBuggy.output.txt).  Note that I've commented out the following line at TestRunner.java:30 to make the output less verbose:
+If you run the above, you should get output that looks like
+[runTestBuggy.output.txt](runTestBuggy.output.txt).  Note that I've commented
+out the following line at TestRunner.java:30 to make the output less verbose:
+
 ```
 System.out.println(f.getTrace());
 ```
-The above will print a full Java stack trace for every failure.  It is useful when a test fails due to a crash in your program and you want to locate exactly in which source code line the Java exception was thrown.  The defects in RentACatBuggy does not involve crashes due to exceptions so I've temporarily commented it out for brevity.
 
-You can see that all tests fail except the ones for getCat(int id).  That is because I've inserted bugs into RentACatBuggy except for that method.  If your unit test passes any other method, it must be defective.  Time to fix your test.
+The above will print a full Java stack trace for every failure.  It is useful
+when a test fails due to a crash in your program and you want to locate exactly
+in which source code line the Java exception was thrown.  The defects in
+RentACatBuggy does not involve crashes due to exceptions so I've temporarily
+commented it out for brevity.
+
+You can see that all tests fail except the ones for getCat(int id).  That is
+because I've inserted bugs into RentACatBuggy except for that method.  If your
+unit test passes any other method, it must be defective.  Time to fix your
+test!
 
 ## Measuring Code Coverage
 
@@ -297,24 +335,51 @@ generation options are at: https://www.jacoco.org/jacoco/trunk/doc/cli.html
 You don't have to have 100% coverage for this exercise but you will have
 coverage requirements for Deliverable 2.  
 
+## Using an IDE (Integrated Development Environment)
+
+You may use any IDE or Java source code editor of your choice for this
+exercise, and all remaining exercises and deliverables in this course.
+However, the official IDE for this course is Eclipse, as in all examples will
+be demonstrated using that IDE and that is the only IDE for which support is
+provided.  If you haven't used Eclipse before, then it is a good time to start
+learning it as it is one of the most popular IDEs in use for Java and other
+programming languages.
+
+That said, all instructions for all assignments will be given based on the
+commandline, just like I did for this README.  Using an IDE is just an added
+convenience.  For example, many of the actions you have to take on this README
+are integrated into an IDE like Eclipse.  Eclipse auto-compiles your source
+code on every code modification without you having to do anything.  Eclipse
+allows you to save run configurations and run commandlines on the press of a
+button.  Eclipse also provides integration with JUnit, allowing you to run
+JUnit tests from the GUI.  I will show you how to do all of this in class, so
+you only need to pay attention and follow along!
+
+Note that I have pre-created Eclipse projects for each assignment so you just
+need to open them to get the development environment (the .project file is the
+Eclipse project file).  You only need to go to the menu item **File > Open
+Projects from File System** and navigate to the exercise directory.
+
 ## Submission
 
-Each pairwise group will submit the exercise *once* to GradeScope, by *one member* of the group.  The submitting member will press the "View or edit group" link at the top-right corner of the assignment page after submission to add his/her partner.  That way, the feedback will be accessible to both of you.  I recommend that you divide the list of methods to implement / test into two halves and working on one half each.
+Each pairwise group will do one submission to GradeScope as usual.  The
+submitting member must use the "View or edit group" link at the top-right
+corner of the assignment page after submission to add his/her partner.  
 
-You will do two submissions for this exercise.
+The submission this time is divided into two parts:
 
-1. You will create a github repository just for exercise 2.  Add your partner
+1. You will create a github repository just for Exercise 2.  Add your partner
    as a collaborator so both of you have access.  Once you are done modifying
 code, don't forget to commit and push your changes to the github repository.
-When you are done, submit your github repository to GradeScope at the "Exercise
-2 GitHub" link.  Once you submit, GradeScope will run the autograder to grade
+When you are done, submit your github repository to GradeScope at the **Exercise
+2 GitHub** link.  Once you submit, GradeScope will run the autograder to grade
 you and give feedback.  If you get deductions, fix your code based on the
 feedback and resubmit.  Repeat until you don't get deductions.
 
 1. Create a screenshot of code coverage stats using one of the two
    methodologies shown above.  Make sure you take the screenshot of the correct
 screen.  After you have created the screenshot, save the picture to a PDF file
-and submit to GradeScope at the "Exercise 2 Coverage" link.  Make sure the
+and submit to GradeScope at the **Exercise 2 Coverage** link.  Make sure the
 picture fits in one page for easy viewing and grading.
 
 ## GradeScope Feedback
