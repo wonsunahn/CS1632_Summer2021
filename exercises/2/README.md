@@ -27,6 +27,8 @@ A cat which is out for rental cannot be rented and will not be listed until it h
 
 ## Sample Output
 
+This is an example expected interaction with the program:
+
 ```
 Option [1,2,3,4] > 1
 Cats for Rent
@@ -65,28 +67,58 @@ Option [1,2,3,4] > 4
 Closing up shop for the day!
 ```
 
-You will modify two classes: **RentACatImpl.java** and **RentACatTest.java**.  The RentACatImpl class is an (incomplete) implementation of the Rent-A-Cat system.  The RentACatTest class is a JUnit unit test class that tests RentACatImpl.  All locations where you should add code is marked with // TODO comments.
+Let's try running the program and observe the output for ourselves.
 
-We are going to use the TestRunner class to invoke JUnit on the RentACatTest class.  Note how the RentACatTest.class is added to the list of classesToTest.
+1. First let's compile the program using the following script. For Windows:
+   ```
+   compile.bat
+   ```
+   For Mac/Linux:
+   ```
+   bash compile.sh
+   ```
 
-You should use test doubles/mocks for any references to classes other than the one under test that the tested class is dependent upon (i.e. you need to mock any Cat objects).  You do not need to mock the ArrayList class used within RentACatImpl even though RentACatImpl is dependent upon it.  ArrayList is a Java standard library class so we will assume that it is fully tested and defect-free at this point. :)
+1. Next, let's run the program on the commandline:
+   ```
+   java -cp bin RentACatImpl
+   ```
+   And then, try listing the cats available for rent:
+   ```
+   Option [1,2,3,4] > 1
+   Cats for Rent
+   WRITE CODE FOR THISOption [1,2,3,4] >
+   ```
+
+That's not what you expected!  That is because the Rent-A-Cat system is
+incomplete.  For this exercise, you will modify two classes to complete the
+system: **RentACatImpl.java** and **RentACatTest.java**.  The RentACatImpl
+class is an (incomplete) implementation of the Rent-A-Cat system.  The
+RentACatTest class is a JUnit test class that tests RentACatImpl.  All
+locations where you should add code is marked with // TODO comments.
 
 ## Running Unit Tests
 
 1. First let's do a sanity check to see if JUnit works well with the Java version installed on your machine.  For Windows try doing:
     ```
-    run.bat
+    runTest.bat
     ```
     For Mac or Linux, try doing:
     ```
-    bash run.sh
+    bash runTest.sh
     ```
     For those of you who prefer Makefiles, you can also do:
     ```
     make
     ```
-    If successful, you will get a message "ALL TESTS PASSSED".  But hold your horses, we aren't done yet!  The tests passed because they are currently empty.
-    
+
+    If successful, you will get a message "ALL TESTS PASSSED".  We are using a
+TestRunner class to invoke JUnit on the RentACatTest class.  Let's take a look
+into TestRunner.java for a moment.  Note how the RentACatTest.class is added to
+the list of classesToTest.  Also note how "ALL TESTS PASSED" is printed in the
+end if there are no failures.  So are we done since there are no failures?
+Hold your horses!  The reason there were no failures is because all tests are
+currently empty.
+
 2. Now you are ready to fill in the test cases in RentACatTest.  If you want to do a sanity test, try a very simple assertion that always succeeds in testGetCatNullNumCats0:
     ```
     assertTrue(true);
@@ -122,9 +154,54 @@ sample code or the NoogieTest and CoogieTest under the Example/ directory.
 
 ## Tips
 
-1. We will try to apply the Test Driven Development (TDD) model here.  Try writing the test case(s) FIRST before writing the code for a feature.  This way, you will always have 100% test coverage for the code you have written and are writing.  Hence, if you break any part of it in the course of adding a feature or refactoring your code, you will know immediately.  Otherwise, if you test at the very end, you may have to do some major changes.
-1. Remember to _not_ mock the class under test (i.e. RentACat), only external classes that it depends upon (i.e. Cat).  In fact, if you don't mock Cat and use the actual Cat objects, your tests will most likely fail.  I have injected artificial defects in the form of exceptions into the Cat class to emulate a buggy Cat class.  Your tests should work regardless of what's inside Cat.
-1. The easiest thing to do is assert against a return value, but you can also assert against attributes of an object.  For example:
+1. We will try to apply the Test Driven Development (TDD) model here.  Try
+   writing the test case(s) FIRST before writing the code for a feature.  This
+way, you will always have 100% test coverage for the code you have written and
+are writing.  Hence, if you break any part of it in the course of adding a
+feature or refactoring your code, you will know immediately.  Otherwise, if you
+test at the very end, you may have to do some major changes.
+
+1. Each @Test method represents a test case.  A JUnit class with one or more
+   @Test methods represents a test plan. A JUnit class is usually named after
+whichever class it is testing, with the string `Test` appended to the tested
+class name.  For example, Foo.java would be tested by FooTest.java.  But this
+is not necessarily the case.  A JUnit class may test multiple classes with
+related functionality; in that case, it is typically named after the
+functionality it is testing.
+  
+1. Make use of the @Before and @After methods in your JUnit testing.  @Before
+   and @After methods are invoked before and after each @Test method.  They are
+used to set up and tear down test fixtures.  Test fixtures in JUnit are objects
+that need to be created and initialized before performing each test case.  You
+can think of them as "actors" in your test script.  Having the @Before and
+@After allows us to avoid duplicating test fixture code in each test case.
+
+1. In RentACatTest.java, pay close attention to the Javadoc comments on top of
+   each @Test method which describe the preconditions, execution steps, and
+postconditions.  Remember, part of the preconditions may be already fulfilled
+with the test fixture initialized in the @Before method.
+
+1. You should use test doubles/mocks for any references to classes other than
+   the one under test that the tested class is dependent upon (i.e. you need to
+mock any Cat objects).  In fact, if you don't mock Cat and use the actual Cat
+objects, your tests will most likely fail.  I have injected artificial defects
+in the form of exceptions into the Cat class to emulate a buggy Cat class.
+Because your tests should work regardless of what's inside Cat.  As to the
+ArrayList class used to store the list of Cats, you do not need to mock it even
+if RentACatImpl is dependent upon it.  ArrayList is a Java standard library
+class so we will assume that it is fully tested and defect-free at this point.
+:)
+
+1. Remember to _not_ mock the class under test (i.e. RentACat), only external
+   classes that it depends upon (i.e. Cat).  If you mock RentACat, and then
+test the behavior that you are mocking, what are you testing?  You are testing
+your test code and not your implementation!  In fact, this type of test is
+called a **tautological test** since it will always pass, regardless of whether
+your implementation has a defect or not.
+
+1. The easiest thing to do is assert against a return value, but you can also
+   assert against attributes of an object.  For example:
+
     ```
     @Test
     public void testCatName() {
@@ -132,10 +209,7 @@ sample code or the NoogieTest and CoogieTest under the Example/ directory.
     }
     ```
     You can also use the Mockito verify method to perform behavior verification.
-1. Make use of the @Before and @After methods in your JUnit testing.  @Before and @After methods are invoked before and after each @Test method.  They are used to set up and tear down test fixtures.  Test fixtures in JUnit are objects that need to be created and initialized before performing each test case.  You can think of them as "actors" in your test script.  Having the @Before and @After allows us to avoid duplicating test fixture code in each test case.
-1. In RentACatTest.java, pay close attention to the Javadoc comments on top of each @Test method which describe the preconditions, execution steps, and postconditions.  Remember, part of the preconditions may be already fulfilled with the test fixture initialized in the @Before method.
-1. Each @Test method represents a test case.  A JUnit class with one or more @Test methods represents a test plan. A JUnit class is usually named after whichever class it is testing, with the string `Test` appended to the tested class name.  For example, Foo.java would be tested by FooTest.java.  But this is not necessarily the case.  A JUnit class may test multiple classes with related functionality; in that case, it is typically named after the functionality it is testing.
-  
+
 ## Expected Outcome
 
 Once you start filling in tests in RentACatTest, you will start to see some of those tests fail for those methods you haven't completed yet for RentACatImpl.  As you start filling in the methods in RentACatImpl, those failures will go away one by one until you again see the output:
@@ -144,14 +218,14 @@ ALL TESTS PASSED
 ```
 You have come full circle!  But wait, does this mean RentACat is bug-free?  How do you know if your unit tests themselves had defects and that's why they passed, even when RentACat is buggy?We have to actually verify the unit tests themselves to make sure that they are not defective!  One way to verify unit tests is to test them on buggy programs to see if they detect the bugs as they are intended to.  I have created a buggy version of Rent-A-Cat just for this purpose named RentACatBuggy.java.  In order to apply your unit tests to RentACatBuggy, execute the following.  For Windows:
 ```
-runBuggy.bat
+runTestBuggy.bat
 ```
 For Mac or Linux, try doing:
 ```
-bash runBuggy.sh
+bash runTestBuggy.sh
 ```
 
-If you run the above, you should get output that looks like [runBuggy.output.txt](runBuggy.output.txt).  Note that I've commented out the following line at TestRunner.java:30 to make the output less verbose:
+If you run the above, you should get output that looks like [runTestBuggy.output.txt](runTestBuggy.output.txt).  Note that I've commented out the following line at TestRunner.java:30 to make the output less verbose:
 ```
 System.out.println(f.getTrace());
 ```
