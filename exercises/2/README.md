@@ -18,7 +18,7 @@ Summer Semester 2021 - Exercise 2
 
 ## Before You Begin
 
-Please download Eclipse IDE:
+Please download **Eclipse IDE**:
 https://www.eclipse.org/downloads/
 
 Have it downloading and installing while you read the rest of the exercise.
