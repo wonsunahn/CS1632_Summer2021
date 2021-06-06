@@ -6,7 +6,7 @@
   * [Tips](#tips)
   * [Expected Outcome](#expected-outcome)
   * [Measuring Code Coverage](#measuring-code-coverage)
-  * [Using an IDE (Integrated Development Environment)](#using-an-ide--integrated-development-environment-)
+  * [Using an IDE (Integrated Development Environment)](#using-an-ide-integrated-development-environment)
   * [Submission](#submission)
   * [GradeScope Feedback](#gradescope-feedback)
   * [Resources](#resources)
