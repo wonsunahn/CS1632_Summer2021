@@ -23,22 +23,22 @@ https://www.eclipse.org/downloads/
 
 Have it downloading and installing while you read the rest of the exercise.
 
-Also, accept Exercise 2 on GitHub Classroom using the below link:
+Also, accept Exercise 2 on **GitHub Classroom** using the following link:
 https://classroom.github.com/g/bF3zwzOj
 
 When you accept the assignment, you will be asked to create a new Team, or
-choose an existing Team.  If you are the first member to accept the assignment,
-please create a new Team.  Otherwise, please look for an existing Team that
-your partner has already created.  Now, in order to identify teams, we need a
-unique team name for each team.  Please come up with a name in consultation
-with your partner.  You can use any name you want --- just keep it classroom
-friendly.  Once you create a Team, a GitHub repository will be automatically
-created for you (after a few seconds delay as indicated on the web page).  This
-repository is the one that you will use to collaborate with your partner and
-also submit to GradeScope.
+choose an existing Team.  If you are the first group member to accept the
+assignment, please create a new Team.  Otherwise, please look for an existing
+Team that your partner has already created.  Now, in order to identify teams,
+we need a unique team name for each team.  Please come up with a name in
+consultation with your partner.  You can use any name you want --- just keep it
+classroom friendly.  Once you create a Team, a GitHub repository will be
+automatically created for you (after a few seconds delay as indicated on the
+web page).  This repository is the one that you will use to collaborate with
+your partner and also submit to GradeScope.
 
-When you have come with a name, please update your **Partnership Contract** on
-GradeScope with the name (I've added a new field).  And use that name
+When you have come up with a name, please update your **Partnership Contract**
+on GradeScope with the name (I've added a new field).  Please use that name
 consistently on future assignments.
 
 ## Description
