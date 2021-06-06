@@ -23,20 +23,48 @@ https://www.eclipse.org/downloads/
 
 Have it downloading and installing while you read the rest of the exercise.
 
+Also, accept Exercise 2 on GitHub Classroom using the below link:
+https://classroom.github.com/g/bF3zwzOj
+
+When you accept the assignment, you will be asked to create a new Team, or
+choose an existing Team.  If you are the first member to accept the assignment,
+please create a new Team.  Otherwise, please look for an existing Team that
+your partner has already created.  Now, in order to identify teams, we need a
+unique team name for each team.  Please come up with a name in consultation
+with your partner.  You can use any name you want --- just keep it classroom
+friendly.  Once you create a Team, a GitHub repository will be automatically
+created for you (after a few seconds delay as indicated on the web page).  This
+repository is the one that you will use to collaborate with your partner and
+also submit to GradeScope.
+
+When you have come with a name, please update your **Partnership Contract** on
+GradeScope with the name (I've added a new field).  And use that name
+consistently on future assignments.
+
 ## Description
 
-In this exercise, we will simulate the main Rent-A-Cat rental system software.  This is obviously a "toy" implementation of the vast and powerful Rent-A-Cat apparatus.
+In this exercise, we will simulate the main Rent-A-Cat rental system software.
+This is obviously a "toy" implementation of the vast and powerful Rent-A-Cat
+apparatus.
 
-I have created some skeleton code for you to fill in for this exercise.  It is up to you to fill in the `returnCat()`, `rentCat()`, `listCats()` and `catExists()` methods, and write unit tests for them.  Unit tests must use doubles for the Cat object with appropriate stubbing.  I have intentionally inserted a defect on every Cat method such that an exception is fired if you try to use a real Cat object in any way during your unit testing!  Those defects are turned off when Cat is used within the main RentACat program.
+I have created some skeleton code for you to fill in for this exercise.  It is
+up to you to fill in the `returnCat()`, `rentCat()`, `listCats()` and
+`catExists()` methods, and write unit tests for them.  Unit tests must use
+doubles for the Cat object with appropriate stubbing.  I have intentionally
+inserted a defect on every Cat method such that an exception is fired if you
+try to use a real Cat object in any way during your unit testing!  Those
+defects are turned off when Cat is used within the main RentACat program.
 
-Rent-A-Cat rents cats to customers for various needs (mousing, companionship, homework help, etc.).  From the main menu, users may:
+Rent-A-Cat rents cats to customers for various needs (mousing, companionship,
+homework help, etc.).  From the main menu, users may:
 
 1. See list of cats for rent
 2. Rent a cat to a customer
 3. Return a cat
 4. Quit
 
-A cat which is out for rental cannot be rented and will not be listed until it has been returned.  We will not charge money for this exercise.
+A cat which is out for rental cannot be rented and will not be listed until it
+has been returned.  We will not charge money for this exercise.
 
 ## Sample Output
 
@@ -368,13 +396,11 @@ corner of the assignment page after submission to add his/her partner.
 
 The submission this time is divided into two parts:
 
-1. You will create a github repository just for Exercise 2.  Add your partner
-   as a collaborator so both of you have access.  Once you are done modifying
-code, don't forget to commit and push your changes to the github repository.
-When you are done, submit your github repository to GradeScope at the **Exercise
-2 GitHub** link.  Once you submit, GradeScope will run the autograder to grade
-you and give feedback.  If you get deductions, fix your code based on the
-feedback and resubmit.  Repeat until you don't get deductions.
+1.  Submit the repository created by GitHub Classroom for your team to
+    GradeScope at the **Exercise 2 GitHub** link.  Once you submit, GradeScope
+will run the autograder to grade you and give feedback.  If you get deductions,
+fix your code based on the feedback and resubmit.  Repeat until you don't get
+deductions.
 
 1. Create a screenshot of code coverage stats using one of the two
    methodologies shown above.  Make sure you take the screenshot of the correct
