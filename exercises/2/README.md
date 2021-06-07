@@ -9,6 +9,7 @@
   * [Using an IDE (Integrated Development Environment)](#using-an-ide-integrated-development-environment)
   * [Submission](#submission)
   * [GradeScope Feedback](#gradescope-feedback)
+  * [Groupwork Plan](#groupwork-plan)
   * [Resources](#resources)
 
 # CS 1632 - Software Quality Assurance
@@ -457,8 +458,8 @@ submission.
   * listCats
   * rentCat
 
-Push frequently and also pull frequently to your GitHub repository whenever you
-are done finishing a method to merge changes as you go along.  Since we are
+Push frequently and also pull frequently from your GitHub repository whenever
+you are done finishing a method to merge changes as you go along.  Since we are
 doing TDD, start with RentACatTest.java and then move on to RentACatImpl.java.
 Please help each other, as always.
 
