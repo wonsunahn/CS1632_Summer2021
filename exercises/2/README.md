@@ -418,6 +418,54 @@ If you see test failures, read the feedback given by the autograder, fix your co
 
 Beside the feedback given by the autograder, the TA or myself will leave more detailed feedback on the "Feedback on source code" question.  We will also check your code coverage screenshot submission and give feedback.
 
+## Groupwork Plan
+
+There are two files needing modification: RentACatTest.java and
+RentACatImpl.java.  One way you can divide up the work is like the following:
+
+[RentACatTest.java]
+
+* Partner 1:
+  * setUp
+  * testCatAvailableFalseNumCats0
+  * testCatAvailableFalseNumCats3
+  * testCatAvailableTrueNumCats3
+  * testCatExistsFalseNumCats0
+  * testCatExistsTrueNumCats3
+  * testReturnCatFailureNumCats0
+  * testReturnCatNumCats3
+* Partner 2:
+  * setUp
+  * testGetCatNullNumCats0
+  * testGetCatNumCats3
+  * testListCatsNumCats0
+  * testListCatsNumCats3
+  * testRentCatFailureNumCats0
+  * testRentCatFailureNumCats3
+
+Notice that the setUp method is repeated for both partners.  Both of you will
+have to implement the setUp method individually to have your assigned tests
+working.  You will eventually merge the two methods into one on your final
+submission.
+
+[RentACatImpl.java]
+
+* Partner 1:
+  * catExists
+  * returnCat
+* Partner 2:
+  * listCats
+  * rentCat
+
+Push frequently and also pull frequently to your GitHub repository whenever you
+are done finishing a method to merge changes as you go along.  Since we are
+doing TDD, start with RentACatTest.java and then move on to RentACatImpl.java.
+Please help each other, as always.
+
+When you are done with coding, each of you please produce the code coverage
+stats using Jacoco and compare the results to make sure they are the same.
+Submit one copy.
+
 ## Resources
 
 These links are the same ones posted at the end of the slides:
