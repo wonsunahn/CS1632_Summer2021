@@ -1,7 +1,20 @@
+- [CS 1632 - Software Quality Assurance](#cs-1632---software-quality-assurance)
+  * [Deliverable 2](#deliverable-2)
+  * [Development Methodology](#development-methodology)
+  * [Expected Outcome](#expected-outcome)
+  * [Additional Requirements](#additional-requirements)
+  * [Grading](#grading)
+  * [Submission](#submission)
+  * [GradeScope Feedback](#gradescope-feedback)
+  * [Groupwork Plan](#groupwork-plan)
+  * [Resources](#resources)
+
 # CS 1632 - Software Quality Assurance
 summer Semester 2021
 
 * DUE: Jun 28, 2021 6:30 PM 
+
+**GitHub Classroom Link:** https://classroom.github.com/g/3ai5Tbi4
 
 ## Deliverable 2
 
