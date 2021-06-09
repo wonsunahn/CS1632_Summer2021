@@ -105,26 +105,30 @@ The above will print a full Java stack trace for every failure.  It is useful wh
 number, add more unit tests to CoffeeMakerQuestTest.
 
 * For this program, no requirements are given as the requirement is that you
-  mimic the output of the given coffeemaker.jar file (note that this jar file
-is slightly different from the version provided to you for Deliverable 1 as I
-have fixed most of the bugs!).  If GradeScope gives you a failure because your
-output is different canonical output, it will show you where the difference is
-between brackets [].  In fact, GradeScope itself uses JUnit behind the scenes
-to test your program and showing the difference in brackets is a JUnit
-assertEquals feature.
+  mimic the output of the given **coffeemaker.jar** file (note that this jar
+file is slightly different from the version provided to you for Deliverable 1
+as I have fixed most of the bugs!).  If GradeScope gives you a failure because
+your output is different canonical output, it will show you where the
+difference is between brackets [].  In fact, GradeScope itself uses JUnit
+behind the scenes to test your program and showing the difference in brackets
+is a JUnit assertEquals feature.
 
 * You are asked to complete CoffeeMakerQuestImpl, but there are other support
   classes as well such as Player and Room.  You are expected to use the methods
 provided in those classes and not repeat the code somewhere else.  In fact,
-this is an important software testability principle called DRY (Don't Repeat
-Yourself).  For example, the Player class has the method
+this is an important software testability principle called **DRY (Don't Repeat
+Yourself)**.  For example, the Player class has the method
 **Player.getInventoryString** that prints out the inventory contents based on
 the current items.  You are required to use that method and not implement a
 similar method of your own.
 
-* Write at least one private method while implementing CoffeeMakerQuestImpl.
-  Add at least one unit test that tests that private method at the very bottom
-of CoffeeMakerQuestTest.  Use Java reflection to do this.
+* Write at least one **private method** while implementing
+  CoffeeMakerQuestImpl.  In general, private methods of a Java class work as
+"helper" methods that implement a sub-functionality of a public method.  You
+have the freedom to choose what sub-functionality you want to encapsulate
+within a private method.  Also, add at least one unit test that directly tests
+a private method at the very bottom of CoffeeMakerQuestTest.  Use **Java
+reflection** to do this.
 
 * Coding style is also important for software quality in the long run (even
   though they are not technically defects as we learned).  In particular, a
@@ -147,7 +151,7 @@ uniform convention whatever you choose.
 * GradeScope autograder: 70% of grade
 * Private method added and tested: 5% of grade
 * Source code style (lower camel case naming / formatting): 10% of grade
-* Code coverage: 15% of grade
+* Report (including coverage stats): 15% of grade
 
 Please review the grading_rubric.txt for details.
 
