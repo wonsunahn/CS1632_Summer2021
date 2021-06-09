@@ -401,7 +401,7 @@ The submission this time is divided into two parts:
     GradeScope at the **Exercise 2 GitHub** link.  As of now, GitHub
 integration with GradeScope is not working properly so you cannot submit your
 repository using the **GitHub** option.  Please choose the **Upload** option
-and simply drag-and-drop the folder for Exercise 2.  Once you submit,
+and simply drag-and-drop your local folder for Exercise 2.  Once you submit,
 GradeScope will run the autograder to grade you and give feedback.  If you get
 deductions, fix your code based on the feedback and resubmit.  Repeat until you
 don't get deductions.
