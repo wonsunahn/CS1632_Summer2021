@@ -398,10 +398,13 @@ corner of the assignment page after submission to add his/her partner.
 The submission this time is divided into two parts:
 
 1.  Submit the repository created by GitHub Classroom for your team to
-    GradeScope at the **Exercise 2 GitHub** link.  Once you submit, GradeScope
-will run the autograder to grade you and give feedback.  If you get deductions,
-fix your code based on the feedback and resubmit.  Repeat until you don't get
-deductions.
+    GradeScope at the **Exercise 2 GitHub** link.  As of now, GitHub
+integration with GradeScope is not working properly so you cannot submit your
+repository using the **GitHub** option.  Please choose the **Upload** option
+and simply drag-and-drop the folder for Exercise 2.  Once you submit,
+GradeScope will run the autograder to grade you and give feedback.  If you get
+deductions, fix your code based on the feedback and resubmit.  Repeat until you
+don't get deductions.
 
 1. Create a screenshot of code coverage stats using one of the two
    methodologies shown above.  Make sure you take the screenshot of the correct
