@@ -118,9 +118,9 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 ## WEEK 11 (Week of 26 JUL)
 
-* Class 1: Guest Lecture (TBD)
+* Class 1: Guest Lecture by Eaton
 
-* Class 2: Guest Lecture (TBD)
+* Class 2: Guest Lecture by UPMC
 
 ## WEEK 12 (Week of 2 AUG)
 
