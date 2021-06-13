@@ -1,16 +1,16 @@
 - [CS 1632 - Software Quality Assurance](#cs-1632---software-quality-assurance)
   * [Description](#description)
-- [Prerequisites](#prerequisites)
+  * [Prerequisites](#prerequisites)
   * [Running Cucumber Tests](#running-cucumber-tests)
     + [Running Cucumber Tests on Eclipse](#running-cucumber-tests-on-eclipse)
     + [Running Cucumber Tests on Commandline](#running-cucumber-tests-on-commandline)
-  * [Expected Outcome](#expected-outcome)
+    + [Expected Outcome](#expected-outcome)
   * [What To Do](#what-to-do)
     + [Updating RentACatImpl.java](#updating-rentacatimpljava)
     + [Adding Steps in StepDefinitions.java for the "rent cats" Feature](#adding-steps-in-stepdefinitionsjava-for-the--rent-cats--feature)
     + [Further Modifying StepDefinitions.java and User Story for the "return cats" Feature](#further-modifying-stepdefinitionsjava-and-user-story-for-the--return-cats--feature)
   * [Submission](#submission)
-  * [GradeScope Feedback](#gradescope-feedback)
+    + [GradeScope Feedback](#gradescope-feedback)
   * [Resources](#resources)
 
 # CS 1632 - Software Quality Assurance
@@ -28,7 +28,7 @@ but this time with BDD (Behavior Driven Development).
 We will use the Gherkin language to specify behaviors for Rent-A-Cat and use
 the Cucumber framework to test those behaviors.
 
-# Prerequisites
+## Prerequisites
 
 I recommend that you do this on the Eclipse IDE since it is the easiest.
 
@@ -79,7 +79,7 @@ If you are not using Eclipse and you wish to run the tests from the command line
     > mvn test
     ```
 
-## Expected Outcome
+### Expected Outcome
 
 Initially when you run the Cucumber tests, all your tests will fail, partly
 because RentACatImpl is incomplete and partly because your Cucumber testing
@@ -236,26 +236,17 @@ rent_a_cat_return_cats.feature and see if you can have them pass too!
 
 ## Submission
 
-Each pairwise group will submit the exercise *once* to GradeScope, by *one
-member* of the group.  The submitting member will press the "View or edit
-group" link at the top-right corner of the assignment page after submission to
-add his/her partner.  That way, the feedback will be accessible to both of you.
-I recommend that you divide the list of methods to implement / test into two
-halves and working on one half each.
+Each pairwise group will do one submission to GradeScope as usual.  The
+submitting member must use the "View or edit group" link at the top-right
+corner of the assignment page after submission to add his/her partner.  
 
-You will create a github repository just for Supplementary Exercise 2.  Add
-your partner as a collaborator so both of you have access.  Make sure you keep
-the repository *PRIVATE* so that nobody else can access your repository.  This
-applies to all future submissions for this course.  Once you are done modifying
-code, don't forget to commit and push your changes to the github repository.
-When you are done, submit your github repository to GradeScope at the
-"Supplementary Exercise 2 GitHub" link.  Once you submit, GradeScope will run
-the autograder to grade you.  If you get deductions, fix your code based on the
-feedback and resubmit.  Repeat until you don't get deductions.
+Submit the repository created by GitHub Classroom for your team to GradeScope
+at the **Supplementary Exercise 2 GitHub** link.  Once you submit, GradeScope
+will run the autograder to grade you and give feedback.  If you get deductions,
+fix your code based on the feedback and resubmit.  Repeat until you don't get
+deductions.
 
-IMPORTANT: Please keep the github private!
-
-## GradeScope Feedback
+### GradeScope Feedback
 
 The feedback you get from the GradeScope autograder is based on the Cucumber
 summary output.  For example, if you get the following output:
