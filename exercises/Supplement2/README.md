@@ -142,26 +142,33 @@ All the places to modify have been marked by // TODO comments.
 Let's first start by completing src/main/java/RentACatImpl.java.  You can just
 copy the version that you completed for Exercise 2.
 
-**UPDATE**: You have to make a couple of adjustments to RentACatImpl.java before it will compile.
-1. Put the following line at the top:
-   ```
-   package edu.pitt.cs.cs1632;
-   ```
-1. Replace bugInjectionOn with _bugInjectionOn (apologies for not fixing this).
-
-Just by doing that, many
-tests will pass now.  Try running it after copying the file and you will get:
+You have to make an adjustment to the package name for RentACatImpl.java before
+it will compile.  Put the following line at the top:
 
 ```
+package edu.pitt.cs.cs1632;
+```
+
+Just by doing that, many tests will pass now.  Try invoking the Maven testing phase after having copied the
+file and you will get:
+
+```
+> mvn test
 ...
 Tests run: 14, Failures: 5, Errors: 1, Skipped: 0
 ...
 ```
 
-Now we only have 5 failures and 1 errors.  All the tests in Feature: Rent-A-Cat
-listing (in the
+Now we only have **5** failures where as previously we had **9** failures.  In
+fact, all the tests in Feature: Rent-A-Cat listing (in the
 src/test/resources/edu/pitt/cs/cs1632/rent_a_cat_list_cats.feature file) pass.
-Most of the failures are from Feature: Rent-A-Cat renting.  
+
+So why are the rest of the failures and errors happening?  We have rigorously
+tested RentACatImpl using JUnit testing for Exercise 2, so hopefully by now it
+does not contain any defects.  So then, there must be something wrong with the
+Cucumber tests themselves!  Henceforward, we will fix the problems in the
+Cucumber tests one by one and you will be able to learn Cucumber through that
+process.
 
 ### Adding Steps in StepDefinitions.java for the "rent cats" Feature
 

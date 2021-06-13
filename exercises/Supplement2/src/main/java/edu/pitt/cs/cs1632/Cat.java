@@ -5,100 +5,100 @@ public class Cat {
 	 * Indicates whether or not the cat is rented.
 	 */
 
-	boolean _rented = false;
+	private boolean rented = false;
 
 	/**
 	 * ID of the cat By default, -1
 	 */
-	int _id = -1;
+	private int id = -1;
 
 	/**
 	 * Name of the cat
 	 */
 
-	String _name;
+	private String name;
 
 	/**
 	 * Whether bug injection is turned on for the Cat class. Turn off before actual
 	 * usage. Only leave on during JUnit testing.
 	 */
 
-	public static boolean _bugInjectionOn = false;
+	public static boolean bugInjectionOn = false;
 
 	/**
 	 * Constructor - creates a new Cat object Note there are no checks that this ID
 	 * is not taken by another cat! This is probably something that we would fix in
 	 * a production system.
 	 * 
-	 * @param int    id - the id number of this cat
-	 * @param String name - the name of this Cat
+	 * @param id - the id number of this cat
+	 * @param name - the name of this Cat
 	 */
 
 	public Cat(int id, String name) {
-		_rented = false;
-		_id = id;
-		_name = name;
+		rented = false;
+		this.id = id;
+		this.name = name;
 	}
 
 	/**
-	 * Rent cat. Simply sets the _rented flag to true.
+	 * Rent cat. Simply sets the rented flag to true.
 	 */
 
 	public void rentCat() {
-		if (_bugInjectionOn) {
+		if (bugInjectionOn) {
 			throw new UnsupportedOperationException("Injected bug for rentCat()");
 		}
-		_rented = true;
+		rented = true;
 	}
 
 	/**
-	 * Return cat. Simply sets the _rented flag to false.
+	 * Return cat. Simply sets the rented flag to false.
 	 */
 
 	public void returnCat() {
-		if (_bugInjectionOn) {
+		if (bugInjectionOn) {
 			throw new UnsupportedOperationException("Injected bug for returnCat()");
 		}
-		_rented = false;
+		rented = false;
 	}
 
 	/**
-	 * Accessor for _name variable. Returns the name of this cat.
+	 * Accessor for name variable. Returns the name of this cat.
 	 * 
 	 * @return String name of cat
 	 */
 
 	public String getName() {
-		if (_bugInjectionOn) {
+		if (bugInjectionOn) {
 			throw new UnsupportedOperationException("Injected bug for getName()");
 		}
-		return _name;
+		return name;
 	}
 
 	/**
-	 * Accessor for _id variable. Returns the ID of this cat.
+	 * Accessor for id variable. Returns the ID of this cat.
 	 * 
 	 * @return int ID of this cat
 	 */
 
 	public int getId() {
-		if (_bugInjectionOn) {
+		if (bugInjectionOn) {
 			throw new UnsupportedOperationException("Injected bug for getId()");
 		}
-		return _id;
+		return id;
 	}
 
 	/**
-	 * Accessor for _rented variable. Returns if cat is rented.
+	 * Accessor for rented variable. Returns if cat is rented.
 	 * 
 	 * @return boolean - true if rented, false otherwise
 	 */
 
 	public boolean getRented() {
-		if (_bugInjectionOn) {
+		if (bugInjectionOn) {
 			throw new UnsupportedOperationException("Injected bug for getRented()");
 		}
-		return _rented;
+		return rented;
 	}
 
 	/**
@@ -109,10 +109,10 @@ public class Cat {
 	 */
 
 	public String toString() {
-		if (_bugInjectionOn) {
+		if (bugInjectionOn) {
 			throw new UnsupportedOperationException("Injected bug for toString()");
 		}
-		return "ID " + _id + ". " + _name;
+		return "ID " + id + ". " + name;
 	}
 
 }

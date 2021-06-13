@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class RentACatBuggy implements RentACat {
 
-	public ArrayList<Cat> cats = new ArrayList<Cat>();
+	private ArrayList<Cat> cats = new ArrayList<Cat>();
 
 	/**
 	 * Return a cat. This should call the .returnCat() method on the cat for the
@@ -125,7 +125,7 @@ public class RentACatBuggy implements RentACat {
 	 * Given an id, return a reference to the specified cat if a cat with that ID
 	 * exists. Return null if no cat of that ID exists in the list.
 	 * 
-	 * @param int id ID of cat to search for
+	 * @param id ID of cat to search for
 	 * @return Cat searched for if exists, null otherwise
 	 */
 
@@ -170,7 +170,7 @@ public class RentACatBuggy implements RentACat {
 	public static void main(String[] args) {
 
 		// Turn off automatic bug injection in the Cat class.
-		Cat._bugInjectionOn = false;
+		Cat.bugInjectionOn = false;
 
 		RentACat rc = new RentACatBuggy();
 
