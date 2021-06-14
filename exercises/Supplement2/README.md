@@ -72,7 +72,8 @@ looks like a play icon, you should see your newly made run configuration.
 
 ### Running Cucumber Tests on Commandline
 
-If you are not using Eclipse and you wish to run the tests from the command line, use the command line Maven tool:
+If you are not using Eclipse and you wish to run the tests from the command line, use the command line Maven tool.  If you don't have Maven on your machine you need to [download](https://maven.apache.org/download.cgi) it and [install](https://maven.apache.org/install.html) it.  The PATH variable in the installation instructions is the same PATH we modified for setting up JDK 8 in the [Java Assessment Exercise](https://github.com/wonsunahn/CS1632_Summer2021/tree/main/exercises/0#setting-up-jdk-8-for-windows).  Once you make sure Maven works by doing `mvn -v`, do the following:
+
 1. cd into the folder where you have cloned your GitHub Classroom repository.
 2. Invoke 'mvn test':
     ```
