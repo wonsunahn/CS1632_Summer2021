@@ -21,10 +21,9 @@ summer Semester 2021
 For this assignment, your group will write code and unit tests for an
 authorized reproduction of Coffee Maker Quest.  
 
-Requirements for this program are in the requirements.txt file in this
-directory.  In case of ambiguity, please see the original program
-coffeemaker.jar as an example of what to display and how the system should
-work.
+Requirements for this program is that you mimic the behavior of the program
+coffeemaker.jar given in this folder exactly.  This is a version of the Coffee
+Maker Quest game we tested for Deliverable 1, but with defects removed.
 
 Some of the work has already been done for you.  Classes such as
 CoffeeMakerQuest.java, Config.java, Game.java, Player.java, Room.java, and
