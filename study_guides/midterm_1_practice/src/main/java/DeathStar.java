@@ -1,7 +1,8 @@
 
 public class DeathStar {
-  public String shoot(Planet planet) {
-    planet.damage(100);
-    return planet.toString() + " was hit by the superlaser!";
-  }
+	public String shoot(Planet planet) {
+		String planetDescription = planet.toString();
+		planet.damage(100);
+		return planetDescription + " was hit by the superlaser!";
+	}
 }
