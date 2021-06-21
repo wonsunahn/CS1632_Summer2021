@@ -1,5 +1,5 @@
 public class Value {
-	int val = 0;
+	private int val = 0;
 
 	public void incVal() {
 		val++;
