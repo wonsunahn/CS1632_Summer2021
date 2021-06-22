@@ -65,7 +65,7 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 * Class 1: Midterm 1 review 
 
-* Class 2: Study for Midterm 1 (NO CLASS)
+* Class 2: Study for Midterm 1 (Q&A session during class)
   
 * Midterm 1 on GradeScope: Thursday (Jun. 24) 10:00 AM - Saturday (Jun. 26) 11:59 PM
   * Check out the **[study guide](/study_guides/midterm_1_study_guide.md)**!
