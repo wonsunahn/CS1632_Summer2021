@@ -8,4 +8,4 @@ FUN-SEARCH-SMELLY-CAT - On a search of "smelly cat" at the search box at the top
 
 FUN-RULE-3 - The page shall display a set of R/Cats Rules of which the 3rd is: "No NSFW, animal abuse, or cruelty".  The rules box is located in the bottom right corner.
 
-FUN-RULES-11-ITEMS - The R/Cats Rules should have exactly 11 items.
+FUN-RULES-10-ITEMS - The R/Cats Rules should have exactly 10 items.
