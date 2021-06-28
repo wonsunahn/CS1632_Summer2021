@@ -10,9 +10,6 @@
   * [GradeScope Feedback](#gradescope-feedback)
   * [Resources](#resources)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
-
 # CS 1632 - Software Quality Assurance
 
 * DUE: Jul 2 (Friday), 2021 11:59 PM
