@@ -113,26 +113,30 @@ comments.  Leave other boxes unchecked.
 
 1. Save the resulting file into "D3Test.java".
 
+1. As in Exercise 3, you will have to also add this line to the beginning of the @Before
+setUp() method in D3Test.java:
+
+   ```
+   System.setProperty("webdriver.chrome.driver", "Windows/chromedriver.exe");
+   ```
+   Or whatever the path is to your OS compatible chromedriver.  
+
+
 You can now run the D3Test JUnit class using the provided
 [TestRunner.java](TestRunner.java) using one of the following scripts:
 
 * If you are running Windows:
    ```
-   cd Windows
    run.bat
    ```
-* If you are running Mac:
+
+* If you are running Mac or Linux:
    ```
-   cd Mac
-   run.sh
-   ```
-* If you are running Linux:
-   ```
-   cd Linux
    run.sh
    ```
 
-Make sure all tests pass by looking at the TestRunner result (the tests that should pass, not the ones that uncover defects of course :).  If there are any
+Make sure all tests pass by looking at the TestRunner result (the tests that
+should pass, not the ones that uncover defects of course :).  If there are any
 failures, slightly touch up the D3Test.java Selenium tests to make them pass.
 Although Selenium IDE usually does a good job in the translation, sometimes it
 needs an extra hand.  Refer to the Exercise 3 troubleshooting guide:
