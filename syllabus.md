@@ -90,9 +90,9 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 ## WEEK 8 (Week of 5 JUL)
 
-* Class 1: In-class Exercise 4: Performance Testing 
+* Class 1: NO CLASS (In observance of Independence Day)
 
-* Class 2: Discuss Exercise 4 / Deliverable 4 / TopHat questions
+* Class 2: In-class Exercise 4: Performance Testing / Deliverable 4 / TopHat questions
 
 * Deliverable 4 released 
 
