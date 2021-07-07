@@ -109,7 +109,7 @@ monkey numbers, and 223546 and 223519 are the monkey IDs.
 
 * Each monkey shall have an ID; this ID shall remain constant.  For instance,
   Monkey #54 shall always have ID 223546, and Monkey #27 shall always have ID
-223519.  Any changes to the code should not modify the ID value.
+  223519.  Any changes to the code should not modify the ID value.
 
 Sample runs are shown in the [sample_runs.txt](sample_runs.txt) file.  For
 those of you who are interested, MonkeySim is a simulation of the Collatz
