@@ -92,7 +92,7 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 * Class 1: NO CLASS (In observance of Independence Day)
 
-* Class 2: In-class Exercise 4: Performance Testing / Deliverable 4 / TopHat questions
+* Class 2: In-class Exercise 4: Performance Testing / TopHat questions
 
 * Deliverable 4 released 
 
@@ -103,7 +103,7 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 ## WEEK 9 (Week of 12 JUL)
 
-* Class 1: Discuss Deliverable 5 / TopHat questions
+* Class 1: Discuss Deliverable 4 / Deliverable 5 / TopHat questions
 
 * Class 2: In-class Exercise 5: Static Analysis Part 1
 
