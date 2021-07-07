@@ -111,8 +111,14 @@ monkey numbers, and 223546 and 223519 are the monkey IDs.
   Monkey #54 shall always have ID 223546, and Monkey #27 shall always have ID
   223519.  Any changes to the code should not modify the ID value.
 
-Sample runs are shown in the [sample_runs.txt](sample_runs.txt) file.  For
-those of you who are interested, MonkeySim is a simulation of the Collatz
+Sample runs are shown in the [sample_runs.txt](sample_runs.txt) file.  Note
+that I used the **time** utility to measure response time of the application.
+For certain arguments such as 27, it takes more than half an hour to complete!
+There is obviously something wrong with the implementation that is slowing down
+the program.  It is your job to use VisualVM to measure the CPU utilization of
+each method to zoom in on the methods that are the culprits!
+
+For those of you who are interested, MonkeySim is a simulation of the Collatz
 Conjecture (https://en.wikipedia.org/wiki/Collatz_conjecture).  The conjecture
 is that no matter which monkey initially has the banana, Monkey #1 will
 eventually catch the banana in a finite amount of time.  Nobody has been able
