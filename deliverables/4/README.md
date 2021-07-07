@@ -17,7 +17,7 @@ Summer Semester 2021
 
 DUE: July 26 (Monday), 2021 06:30 PM
 
-**GitHub Classroom Link:**
+**GitHub Classroom Link:** https://classroom.github.com/g/ZEJ0n6sZ
 
 ## Description
 
