@@ -15,7 +15,7 @@ Summer Semester 2021 - Exercise 4
 
 * DUE: July 12 (Monday), 2021 06:30 PM
 
-**GitHub Classroom Link:**
+**GitHub Classroom Link:** https://classroom.github.com/g/6s-ZKSVw
 
 ## Before You Begin
 
