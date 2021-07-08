@@ -1,5 +1,5 @@
 mkdir bin
 
-javac -d bin -cp "CommandLineJunit/*:quickcheck-jars\*" src/*.java
+javac -d bin -cp "CommandLineJunit/*:quickcheck-jars/*" src/*.java
 
-java -cp "bin:CommandLineJunit\*:quickcheck-jars\*" MonkeySim $1
+java -Xverify:none -cp "bin:CommandLineJunit/*:quickcheck-jars/*" MonkeySim $1
