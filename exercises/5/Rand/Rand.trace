@@ -1,0 +1,20 @@
+// application: Rand.main()
+// trace over all CG classes
+//------------------------- choice trace
+   0: hreadChoiceFromSet {id:"ROOT" ,1/1,isCascaded:false}
+ 	at java.lang.Boolean.[<clinit>](Boolean.java:0)
+   1: ntIntervalGenerator[id="verifyGetInt(II)",isCascaded:false,0..1,delta=+1,cur=0]
+ 	at java.util.Random.nextInt(Random.java)
+   2: ntIntervalGenerator[id="verifyGetInt(II)",isCascaded:false,0..2,delta=+1,cur=2]
+ 	at java.util.Random.nextInt(Random.java)
+//------------------------- end choice trace
+// application: Rand.main()
+// trace over all CG classes
+//------------------------- choice trace
+   0: hreadChoiceFromSet {id:"ROOT" ,1/1,isCascaded:false}
+ 	at java.lang.Boolean.[<clinit>](Boolean.java:0)
+   1: ntIntervalGenerator[id="verifyGetInt(II)",isCascaded:false,0..1,delta=+1,cur=1]
+ 	at java.util.Random.nextInt(Random.java)
+   2: ntIntervalGenerator[id="verifyGetInt(II)",isCascaded:false,0..2,delta=+1,cur=1]
+ 	at java.util.Random.nextInt(Random.java)
+//------------------------- end choice trace

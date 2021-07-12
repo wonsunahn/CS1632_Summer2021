@@ -1,0 +1,19 @@
+target = Rand
+classpath = ../bin
+
+# Enumerate all possible values returned by Random.nextInt
+cg.enumerate_random = true
+
+# If you want to a trace of program statements leading up to the error, enable the below instead.
+# report.console.property_violation=error,trace
+report.console.property_violation=error
+
+# Print program output as JPF traverses all possible paths
+vm.tree_output = true
+
+# Don't stop at the first error.  Report all errors.
+search.multiple_errors = true
+
+# Generate the state graph file in jpf-state-space.dot and also the trace file in Rand.trace
+listener=.listener.ChoiceTracker
+choice.trace = Rand.trace
