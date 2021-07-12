@@ -24,7 +24,7 @@ DUE: August 7 (Saturday), 2021 11:59 PM
 
 Due to the grading deadline, there is no late submission.  Please work with your partner to complete the project.
 
-**GitHub Classroom Link:** 
+**GitHub Classroom Link:** https://classroom.github.com/g/TW1HxFPT
 
 ## Overview
 
