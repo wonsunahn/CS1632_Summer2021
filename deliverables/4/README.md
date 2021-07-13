@@ -202,6 +202,9 @@ the file is at ReportTemplate.pdf.  Please keep the page separation.
 The report should have a title page with:
 * Your name(s)
 
+ON YOUR FIRST PAGE, please write a brief introduction on any issues you may
+have had with VisualVM and also a division of work between partners.
+
 ON A SEPARATE PAGE, write a brief report on the first feature you optimized.
 Write the name of the feature, the methods you refactored, and a VisualVM
 screenshot of method "Hot spots" *after* the refactoring.  Please only include
