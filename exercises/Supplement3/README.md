@@ -343,7 +343,7 @@ public void testIsValidHTML(@From(ValidHTMLStringGenerator.class) String s) {
 ```
 
 ValidHtmlStringGenerator generates randomized HTML strings with matching
-<b>...</b> and <i>...</i> tags.  All strings passed by this generator are valid
+**\<b\>...\</b\>** and **\<i\>...\</i\>** tags.  All strings passed by this generator are valid
 HTML so the invariant is that they all return true when
 StringOps.isValidHTML(s) is called.  ValidHtmlStringGenerator is another custom
 generator that is able to rigorously test your program by generating random but
