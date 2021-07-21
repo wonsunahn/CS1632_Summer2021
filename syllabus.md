@@ -135,7 +135,7 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 * Class 2: Midterm 2 review / Discuss TopHat questions
 
-* Midterm 2 on GradeScope: Thursday (Aug. 5) 10:00 AM - Saturday (Aug. 7) 11:59 PM
+* Midterm 2 on GradeScope: Thursday (Aug. 5) 10:00 AM - Sunday (Aug. 8) 11:59 PM
   * Check out the **[study guide](/study_guides/midterm_2_study_guide.md)**!
   * Will be posted as link named "Midterm 2" at Thursday 10:00 AM.
   * You will choose a 3 hour span to complete exam within the above 3-day period.
