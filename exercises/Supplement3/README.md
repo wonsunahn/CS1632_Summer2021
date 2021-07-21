@@ -217,7 +217,7 @@ smallest set of defect-triggering values meant to help you debug.
 
 ## Task 3: Complete StringOpsTest testEquals method
 
-Open StringOpsTest.java.  Look at the testEquals method:
+Open StringOpsTest.java.  Let's look at the testEquals method:
 
 ```
 @Property(trials = 1000)
@@ -227,14 +227,37 @@ public void testEquals(String s1, String s2) {
 }
 ```
 
-Fill in the test as before based on the Javadoc comments.  Now, this time, even
-after filling in the test the test passes (and it will pass no matter how many
-times you run it unless you are very lucky).  Does that mean StringOps is
-bug-free?  Absolutely not!  If you see StringOps.equals(String s1, String s2),
-you can see the two strings are compared only up to Integer.min(s1.length(),
-s2.length()).  So if one string is shorter than the other, but the two strings
-are identical up to that point, equals will return true.  That cannot be
-correct behavior.
+Note that now the randomized input parameters **s1** and **s2** are now
+strings.  A string is a form of a byte stream, since each character in the
+string is represented as an ASCII code byte.  So you can consider this to be
+an example of **fuzz testing**, a type of stochastic testing that deals with
+byte streams.
+
+When you do fuzz testing, you need to be extra careful in choosing a good
+distribution of random values, in order to get good test coverage.  Your end
+goal should be to get a good number of random values for each equivalence
+class, since each equivalence class would exercise a different part of the
+code.  For numerical input values, you are likely to hit every equivalence
+class, given enough trials.  Or, you can use the **@InRange** annotation to
+ensure that random values are generated for a certain range of input values
+for a particular equivalence class.
+
+For byte streams, equivalence classes cannot be simply described using a
+"range" like numbers.  For byte streams, equivalence classes are things
+like a string with less 10 characters, a string in all-caps, a string in
+proper XML format, etc.  These cannot be expressed using the @InRange
+annotation.  So we need to create a specialized random value generator for
+each equivalence class.  Otherwise, there is fat chance that you will hit
+upon a properly formatted XML string by dumb luck!
+
+Going back to our testEquals test, fill in the test as before based on the
+Javadoc comments.  Now even after filling in the test the test passes (and
+it will pass no matter how many times you run it unless you are very lucky).
+Does that mean StringOps is bug-free?  Absolutely not!  If you see
+StringOps.equals(String s1, String s2), you can see the two strings are
+compared only up to Integer.min(s1.length(), s2.length()).  So if one string
+is shorter than the other, but the two strings are identical up to that
+point, equals will return true.  That cannot be correct behavior.
 
 Why wasn't the defect caught during the 1000 trials?  That is because the
 defect manifests only when s1 and s2 fit a certain pattern (one is a substring
