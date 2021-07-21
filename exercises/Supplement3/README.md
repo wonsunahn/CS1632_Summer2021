@@ -387,7 +387,7 @@ we expect all tests to fail, if you have done the work.
 
 * DUE: August 7 (Saturday), 2021 11:59 PM 
 
-**GitHub Classroom Link:** 
+**GitHub Classroom Link:** https://classroom.github.com/g/dv2OpU9n
 
 This extra credit is worth 1 point out of 100 points for the entire course.
 Note that you need to get 100/100 on the autograder to get credit.  Partial
