@@ -5,19 +5,31 @@ import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
 
+import org.junit.Test;
+
 @RunWith(JUnitQuickcheck.class)
 public class MonkeySimStochasticTest {
+	// TODO: Add member variables as needed
+	
 	/**
-	 * TODO: For Extra Credit, write a property-based test method testMonkeySim.
-	 * Invokes runSimulation with s being the starting monkey with the banana. The
-	 * invariant that you should check is that runSimulation does not throw an
-	 * InfiniteLoopException. As of now, runSimulation throws no exception of the
-	 * kind and just falls into the infinite loop, given the defect triggering
-	 * sequence. So, MonkeySim will also have to be modified to throw that exception
-	 * for this to work.
+	 * Preconditions: none
+	 * Execution steps: Call MonkeySim.main("s"), where s is a random integer greater than equal to 1
+	 * Postconditions: Call terminates without the InfiniteLoopException thrown 
 	 * 
-	 * @param s The starting monkey with the banana. Use the @InRange annotation to
+	 * @param s Integer argument to pass to MonkeySim.main.  Use the @InRange annotation to
 	 *          make sure the generated random number for s is greater than or equal
 	 *          to 1.
 	 */
+	
+	// TODO: Write a QuickCheck test case testMainStochastic that does the above.
+	
+	/**
+	 * Preconditions: none
+	 * Execution steps: Call MonkeySim.main("<FILL_IN_YOUR_NUMBER>")
+	 * Postconditions: Call terminates without the InfiniteLoopException thrown 
+	 */
+	
+	// TODO: Write a regular JUnit test case testMainInfiniteLoop that does the
+	// above. Replace <FILL_IN_YOUR_NUMBER> with a number that triggers an infinite
+	// loop defect in the current implementation.
 }
