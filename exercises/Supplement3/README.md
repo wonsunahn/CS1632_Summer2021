@@ -20,7 +20,7 @@
 # CS 1632 - Software Quality Assurance
 Summer Semester 2021 - Supplementary Exercise 3
 
-* DUE: July 26 (Monday), 2021 6:30 PM 
+* DUE: July 28 (Wednesday), 2021 6:30 PM 
 
 **GitHub Classroom Link:** https://classroom.github.com/g/HXh7JIpY
 
