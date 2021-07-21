@@ -387,7 +387,12 @@ we expect all tests to fail, if you have done the work.
 
 * DUE: August 7 (Saturday), 2021 11:59 PM 
 
+**GitHub Classroom Link:** 
+
 This extra credit is worth 1 point out of 100 points for the entire course.
+Note that you need to get 100/100 on the autograder to get credit.  Partial
+credit will be given under the discretion of the instructor and may not
+necessarily equate to your GradeScope score.
 
 ## Description
 
@@ -427,41 +432,56 @@ InfiniteLoopException and fail()-ing that test run.
 
 ## What to do
 
-To get started on the extra credit, you first have to get the most recent files
-in the Exercise 4 folder from the course repository by doing a pull.  These are
-the newly updated files:
+Create a new GitHub classroom repository by following the link posted above.
+Note that this repository, while similar to Exercise 4, differs in a couple
+of key ways.  It removed the List<Monkey> ml and MonkeyWatcher mw parameters
+from its public methods to give you more freedom to choose your own data
+structure for the group of monkeys and make other implementation changes.
+And you will have to optimize MonkeySim heavily, beyond what you did for
+Exercise 4, in order for the program to be performant enough for stochastic
+testing.  Stochastic testing does hundreds of random trials and each trial
+must be quick for it to end in a reasonable amount of time.
 
-* quickcheck-jars/
-* src/MonkeySimStochasticTest.java
-* src/TestRunner.java
-* .classpath
-* runTest.bat
-* runTest.sh
+Also, a new **verbose** flag is added that allows MonkeySim to disable system
+output, so that MonkeySim can be further sped up during testing.  You are
+expected to turn off this flag for your stochastic tests as specified in the
+Javadoc comments.
 
-They are needed to enable QuickCheck in the original Exercise 4 project.
+You will have to:
+1. Optimize MonkeySim with the help of VisualVM, while making sure
+   MonkeySimPinningTest continues to pass.
+1. Modify MonkeySim so that it detects infinite loops and throws the
+   InfiniteLoopException when it does, again making sure
+MonkeySimPinningTest still passes.
+1. Complete the testMainStochastic QuickCheck method in
+   MonkeySimStochasticTest.java using the InfiniteLoopException exception.
+1. Run testMainStochastic and let QuickCheck find a monkey number argument
+   that triggers the infinite loop defect.
+1. Create a regular JUnit test case out of that argument named
+   testMainInfiniteLoop that checks for infinite loops.  Of course, this
+test case will always fail with the current implementation.
 
-Based on the newly modified Exercise 4 folder, you will have to:
-1. Modify MonkeySim so that it can detect infinite loops.
-1. Complete MonkeySimStochasticTest.java using JUnit quickcheck and property-based testing.
-1. Give me 3 arguments that trigger an infinite loop you discovered through the stochastic testing.
+In order to run the simulation, you can use the following commandline:
+```
+java -cp bin MonkeySim <starting_monkey_number>
+```
 
-_Note: You need to have optimized MonkeySim sufficiently in Exercise 4 before
-even attempting this.  Or it will take forever to go through all the randomized
-arguments._
+In order to run the MonkeySimPinningTest and MonkeySimStochasticTest JUnit
+tests, you can use the following commandline (for Windows):
+```
+java -cp quickcheck-jars/*:bin TestRunner
+```
+Or the commandline (for Mac/Linux):
+```
+java -cp quickcheck-jars/*:bin TestRunner
+```
+
+The expectation is that the pinning tests (that check for existing behavior)
+should pass and the stochastic tests (that check for the infinite loop
+defect), should fail.
 
 ## Extra Credit Submission
 
-Modify your pre-existing GitHub classroom repository for Exercise 4 to
-perform the above stochastic test.  Please submit the repository to a
-separate **Supplementary Exercise 3 Extra Credit** link.
-
-In the repository, beside your code, please add the following:
-
-1. A README.md file that lists the 3 arguments that trigger an infinite loop.
-2. A runTest.txt file that is a copy-and-paste of the output of running
-   ```
-   time ./runTest.sh
-   ```
-   The output should show runSimulation being run with randomized arguments.
-Some of the runs will pass, some will fail.  The time utility should show that
-you can complete the tests within a reasonable amount of time (< 5 minutes).
+Modify your GitHub classroom repository to perform the above stochastic
+test.  Please submit the repository to a separate **Supplementary Exercise 3
+Extra Credit** link.
